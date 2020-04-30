@@ -7,7 +7,10 @@
       <span *ngIf="cart.itemCount === 0"> (empty)</span>
     </small>
     <button
-      class="btn btn-sm bg-dark text-white" [disabled]="cart.itemCount ===0">
+      class="btn btn-sm bg-dark text-white" 
+      [disabled]="cart.itemCount ===0"
+      routerLink="/cart"
+      >
       <i class="fas fa-shopping-cart"></i>
     </button>
     </div>
